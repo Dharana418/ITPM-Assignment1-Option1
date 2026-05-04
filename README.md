@@ -1,50 +1,43 @@
-# ITPM-Assignment-1Option-1
-3. Prepare Test Data
-Open the file Assignment 1 - Test cases.xlsx located in the extracted folder.
+🚀 Singlish-to-Sinhala Automation Framework
+⚡ Framework Core: Powered by Playwright for browser automation and Python 3.11/3.12.  
 
-Fill in your test data under these columns:
+🛠️ Prerequisites:
 
-TC ID
+Ensure Python 3.11 or 3.12 is installed on your system.  
 
-Input length type
+Install Google Chrome (recommended) or use Playwright’s default Chromium.  
 
-Input
+📂 Environment Setup:
 
-Expected output
+Save the project ZIP to your D: drive and extract it to D:\test_automation.  
 
-Important: Leave the Actual output and Status columns empty; the script will populate these.
+Open Command Prompt and navigate using: cd /d D:\test_automation.  
 
-4. Execute the Script
-In the Command Prompt, run the following command to start the automation:
+📦 One-Time Installation:
 
-DOS
-python test_automation.py --excel "Assignment 1 - Test cases.xlsx" --url "[https://www.pixelssuite.com/chat-translator](https://www.pixelssuite.com/chat-translator)" --wait-ms 5000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1 --keep-open
-📊 Results and Reporting
-5. Verify Results
-Navigate back to the test_automation folder.
+Upgrade pip: pip install -U pip.  
 
-Reopen the Excel file.
+Install core libraries: pip install playwright openpyxl.  
 
-Verify the values automatically recorded in the Actual output and Status columns.
+Download browser binaries: playwright install.  
 
-6. Finalize Documentation
-After reviewing the automated results, add and manually fill the following columns next to the Status column for each case:
+📝 Test Data Preparation:
 
-Singlish input types covered: Categorize the input (e.g., Interrogative, Exclamatory, etc.).
+Open "Assignment 1 - Test cases.xlsx" in the project folder.  
 
-Evidence or rationale for the input type covered: Provide the reasoning behind the specific test case.
+Enter data for TC ID, Input length type, Input, and Expected output.  
 
-Note: Refer to the template provided in Appendix 2 of the assignment document for detailed guidance.
-"""
+Crucial: Leave the Actual output and Status columns empty for the bot to fill.  
 
-with open('README.md', 'w') as f:
-f.write(readme_content)
+🤖 Execution Command:
 
-Your **README.md** file is ready. I have structured it according to the 7 steps you provided, ensuring the commands are easy to copy and the instructions for the Excel file are clear.
+Run the script with the following optimized parameters:
+python test_automation.py --excel "Assignment 1 - Test cases.xlsx" --url "[https://www.pixelssuite.com/chat-translator](https://www.pixelssuite.com/chat-translator)" --wait-ms 5000 --type-delay-ms 80 --slow-mo-ms 200 --save-every 1 --keep-open  
 
-[file-tag: code-generated-file-0-1777909956442359758]
+📊 Post-Test Reporting:
 
-### **Highlights of this README:**
-* **Command Accuracy:** Includes the specific `cd /d` command for D: drive navigation and the full Python execution string with all your required flags (`--wait-ms`, `--type-delay-ms`, etc.).
-* **Clear Boundaries:** Explicitly warns the user not to fill in the 'Actual output' and 'Status' columns manually, as these are handled by the script.
-* **Post-Processing:** Includes a dedicated section for adding the "Singlish input ty
+Reopen the Excel file to verify the automated Actual output and Status results.  
+
+Add two final columns: "Singlish input types covered" and "Evidence or rationale for the input type covered".  
+
+Manually fill these based on the specific linguistic patterns tested in each case.
